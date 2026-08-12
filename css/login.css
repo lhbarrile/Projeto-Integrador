@@ -41,6 +41,7 @@ p {
 label {
     margin: 0 5px 10px;
     font-size: 15px;
+    font-family: "Yantramanav", sans-serif;
 }
 
 input, input:focus {
@@ -106,4 +107,9 @@ button {
     top: 54.7%;  */
     color: var(--cinza);
     padding: 4px 8px ;
+}
+
+#icon {
+    padding: 4px 8px;
+    width: 20px;
 }
