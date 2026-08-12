@@ -10,14 +10,16 @@
 
 <body>
     <div class="login">
-        <h1>GMS - Human Nutrition</h1>
-        <p>Acesse o sistema de gestão</p>
-        <div class="form">
+        
+        <!--TELA DE LOGIN-->
+        <div id="telaLogin" class="tela ativa">
+            <h1>GMS - Human Nutrition</h1>
+            <p>Acesse o sistema de gestão</p>
             <form>
                 <div class="div-form">
                     <label for="email-input">Email:</label>
                     <div class="div-input">
-                        <input type="email" id="email-input" name="email" placeholder="Digite seu Email:" required>
+                        <input type="email" id="email-input" name="email" placeholder="Digite seu Email:">
                     </div>
                 </div>
 
@@ -33,7 +35,51 @@
                     <button class="btn-entrar">Entrar</button>
                 </div>
                 <div class="div-botao">
-                    <button class="btn-cadastro">Cadastre-se</button>
+                    <button class="btn-cadastro" onclick="mostrarTela('telaCadastro')" type="button">Cadastre-se</button>
+                </div>
+            </form>
+        </div>
+
+        <!--TELA DE CADASTRAR-->
+        <div id="telaCadastro" class="tela">
+            <h1>Criar conta</h1>
+            <p>Cadastrar-se para acessar o estoque</p>
+            <form>
+                <div class="div-form">
+                    <label for="nome-input">Nome:</label>
+                    <div class="div-input">
+                        <input type="text" id="nome-input" name="nome" placeholder="Digite seu nome:">
+                    </div>
+                </div>
+                
+                <div class="div-form">
+                    <label for="email-input">Email:</label>
+                    <div class="div-input">
+                        <input type="email" id="email-input" name="email" placeholder="Digite seu Email:">
+                    </div>
+                </div>
+
+                <div class="div-form">
+                    <label for="password-input">Senha:</label>
+                    <div class="div-input">
+                        <input type="password" id="password-cadastro" placeholder="Senha">
+                        <img src="../assets/img/hide.png" id="icon-cadastro" onclick="verSenhaCadastro()">
+                    </div>
+                </div>
+                
+                <div class="div-form">
+                    <label for="password-input">Confirmar senha:</label>
+                    <div class="div-input">
+                        <input type="password" id="password-confirma" placeholder="Confirmar senha">
+                        <img src="../assets/img/hide.png" id="icon-confirma" onclick="verSenhaConfirma()">
+                    </div>
+                </div>
+                
+                <div class="div-botao">
+                    <button class="btn-cadastro" onclick="mostrarTela('telaCadastro')">Cadastrar</button>
+                </div>
+                <div class="div-botao">
+                    <button class="btn-entrar" onclick="mostrarTela('telaLogin')" type="button">Voltar ao Login</button>
                 </div>
             </form>
         </div>
