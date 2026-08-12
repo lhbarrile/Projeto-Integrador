@@ -51,6 +51,7 @@ input, input:focus {
     width: 380px;
     border: none;
     outline: none;
+    font-family: "Yantramanav", sans-serif;
 }
 
 .div-input {
