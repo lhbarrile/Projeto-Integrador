@@ -1,0 +1,17 @@
+@import url("reset.css");
+@import url("login.css");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap'); 
+/*fonte*/
+
+:root {
+    --cor-fundo: #f2f2f2;
+    --verde: #2E6417;
+    --verde-escuro: #1c3d0e;
+    --cinza: #737373;
+    --cinza-escuro: #505050;
+    --branco: #ffffff;
+    --preto: #000000;
+    --sombra: rgba(0, 0, 0, 0.5);
+}

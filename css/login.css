@@ -1,0 +1,108 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo);
+}
+
+.login {
+    
+    box-shadow:  0 4px 12px var(--sombra);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: var(--branco);
+}
+
+h1 {
+    font-family: "Yantramanav", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: "Yantramanav", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.div-form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+label {
+    margin: 0 5px 10px;
+    font-size: 15px;
+}
+
+input, input:focus {
+    padding: 4px 8px;
+    font-size: 15px;
+    /* margin: 10px 0; */
+    border-radius: 10px;
+    width: 380px;
+    border: none;
+    outline: none;
+}
+
+.div-input {
+    border: 1px var(--preto) solid;
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+}
+
+.div-botao {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 250px;
+    height: 40px;
+    margin: 10px;
+}
+
+.btn-entrar {
+    background-color: var(--verde);
+    color: var(--branco);
+    
+}
+
+.btn-entrar:hover {
+    cursor: pointer;
+    background-color: var(--verde-escuro);
+    transition: 0.3s ease; 
+}
+
+.btn-cadastro {
+    background-color: var(--cinza);
+    color: var(--branco);
+}
+
+.btn-cadastro:hover {
+    cursor: pointer;
+    background-color: var(--cinza-escuro);
+    transition: 0.3s ease;
+}
+
+.div-form div {
+    font-size: 20px;
+    cursor: pointer;
+    /* position: absolute; */
+    /* right: 36%;
+    top: 54.7%;  */
+    color: var(--cinza);
+    padding: 4px 8px ;
+}
